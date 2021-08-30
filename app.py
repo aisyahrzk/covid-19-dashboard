@@ -109,7 +109,6 @@ map_case_state_df['cases_perpop'] = map_case_state_df['Rolling Ave.']/map_case_s
 map_case_state_df['id'] = map_case_state_df['state'].apply(lambda x: state_id_map[x])
 
 
-
 def display_choropleth():
     fig = px.choropleth(map_case_state_df, 
                       locations='id', 
@@ -132,21 +131,18 @@ def display_choropleth():
 
     return fig
 
-
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
-
-### SECTION TWO - LAYOUT ##
-app.layout = html.Div( children=[ 
-
-html.Div(children = 'Data last updated: {}'.format(update),style = {
+def serve_layout():
+    
+    return  html.Div( children=[ 
+        
+        
+        html.Div(children = 'Data last updated: {}'.format(update),style = {
     'textAlign':'left',
     'color': '#dfe7fd'
-}),
-
-
-
-html.Div([
+    
+    }),
+    
+    html.Div([
             html.Img(src=app.get_asset_url('malaysia.png'),
                      id = 'jalurgemilang-image',
                      style={'height': '60px',
@@ -326,6 +322,13 @@ html.Div(dcc.Markdown('''
 ##end of div  
 ])
 
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
+server = app.server
+
+### SECTION TWO - LAYOUT ##
+app.layout = serve_layout
+
 
 
 ### SECTION 3 - Callbacks ###
@@ -425,8 +428,12 @@ def update_graph(global_format):
 
 
 
+
+
+
+
 # automatically update HTML display if a change is made to code
 if __name__ == '__main__':
     
-    server = app.server
+    app.server.run(debug=True)
     
