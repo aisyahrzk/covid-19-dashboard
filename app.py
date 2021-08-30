@@ -80,7 +80,6 @@ deaths['Rolling Ave.'] = deaths['deaths_new'].rolling(window=7).mean()
 #state['Rolling Ave.'] = state['cases_new'].rolling(window=7).mean()
 state['Rolling Ave.'] = state.groupby('state')['cases_new'].transform(lambda x: x.rolling(7).mean())
 
-state.to_csv('C:/Users/user/Desktop/momok.csv', index=False, encoding='utf-8')
 
 country['Rolling Sum'] = country.rolling(7, min_periods=1).sum()
 
