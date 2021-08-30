@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+
+body {
+  background-color: 	#6691cc;
+  margin: 5%;
+  font-family:'Roboto Mono', monospace;
+}
+  
+  *, html, body {
+  font-family: 'Roboto Mono', monospace
+  }
+
+.card_container {
+  border-radius: 5px;
+  background-color: #042453;
+  margin: 16px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 2px 2px 2px #2c2b2b;
+}
+
+.create_container {
+  border-radius: 5px;
+  background-color: #042453;
+  margin: 15px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 2px 2px 2px #0f0d0d;
+}
+
+.create_container2 {
+  border-radius: 30px;
+  background-color: #042453;
+  margin: 15px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 2px 2px 2px #696161;
+}
+
+.create_container1 {
+  border-radius: 5px;
+  background-color: #721356;
+  margin: 10px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 2px 2px 2px #f195d3;
+}
+
+.dcc_compon {
+  margin: 0;
+  padding: 5px;
+  width: calc(100%-40px);
+}
+
+.fix_label {
+font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  width: calc(100%-40px);
+}
+
+.flex-display {
+  display: flex;
+}
+
+.container-display {
+  display: flex;
+}
+
+#header {
+  align-items: center;
+}
+
+#refresh-data {
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+  text-transform: none;
+  font-size: 20px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+#title {
+  text-align: center;
+}
+
+#title1 {
+  text-align: center;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Select-control, .Select-menu-outer, .Select-multi-value-wrapper, .select-up, .is-open .Select-control {
+  background-color: #8c96b8;
+  color: white;
+
+}
+
+.Select-control{
+  border: 0.5px solid green;
+}
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
+  color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px !important;
+  display: block !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #9cd8b7 !important;
+  border-radius: 10px !important;
+  display: block !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6389ad;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white !important;
+}
+
+input[type="radio"]{
+  margin: 0 10px 0 10px;
+}
