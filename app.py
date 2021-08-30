@@ -82,6 +82,8 @@ state['Rolling Ave.'] = state.groupby('state')['cases_new'].transform(lambda x: 
 
 state.to_csv('C:/Users/user/Desktop/momok.csv', index=False, encoding='utf-8')
 
+country['Rolling Sum'] = country.rolling(7, min_periods=1).sum()
+
 current_rate = country['cases_new'].iloc[-7:].sum()/population['pop'].iloc[0] * 100000
 #line graph for total cases 
 
@@ -429,5 +431,7 @@ def update_graph(global_format):
 
 # automatically update HTML display if a change is made to code
 if __name__ == '__main__':
+
+    server = app.server
     app.run_server(debug=True)  #False hides errors from users
     
