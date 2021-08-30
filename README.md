@@ -8,7 +8,12 @@ Data Source: https://github.com/MoH-Malaysia/covid19-public
 
 ![Alt text](https://github.com/aisyahrzk/covid-19-dashboard/blob/master/assets/covid.PNG?raw=true)
 
-Highlighted word below header shows the current incident rate for Malaysia. Incidence rate provides a complete picture of the state of the pandemic in a community. It is a measure of the frequency with which the case COVID-19, occurs over 7 days in this case. It is calculated with the formula of (cumulative confirmed cases in a time period/ population)*1000000. The dashboard also displays data showing total cumulative covid cases, daily new cases, total cumulative death cases, daily death case and total current active cases.
+Highlighted word below header shows the current incident rate for Malaysia. 
+- Incidence rate provides a complete picture of the state of the pandemic in a community. 
+- It is a measure of the frequency with which the case COVID-19, occurs over 7 days in this case. 
+- It is calculated with the formula of (cumulative confirmed cases in a time period/ population)*1000000. 
+-
+The dashboard also displays data showing total cumulative covid cases, daily new cases, total cumulative death cases, daily death case and total current active cases.
 
 ![Alt text](https://github.com/aisyahrzk/covid-19-dashboard/blob/master/assets/graph.PNG?raw=true)
 
